@@ -18,3 +18,47 @@ aside {
   flex: 1;
   overflow-y: auto;
 }
+.logo {
+  font-size: 2em;
+  margin-right: 15px;
+  color: blue;
+}
+
+body {
+  background-color: #f0f4f8;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #004080;
+  color: white;
+  padding: 10px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #004080; /* or any background you want */
+}
+
+nav li {
+  padding: 10px 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 2em;
+  margin-right: 20px;
+  padding: 0;
+  color: blue;
+  background: none;
+  line-height: 1;
+}
