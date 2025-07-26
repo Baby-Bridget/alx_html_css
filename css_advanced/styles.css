@@ -123,3 +123,149 @@ main img {
   margin: 20px auto;
   border-radius: 8px;
 }
+.quote {
+  background-color: #fdfcdc; /* You can change this based on Figma */
+  padding: 40px;
+  text-align: center;
+  font-style: italic;
+}
+
+.quote blockquote {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0 auto;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.quote footer {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #555;
+}
+.videos {
+  background-color: #f0f0f0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.video-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.video-list li {
+  width: 200px;
+}
+
+.video-list img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.video-list p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+.membership {
+  background-color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.membership h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: #222;
+}
+
+.membership-options {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.membership .option {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px 30px;
+  width: 250px;
+  background-color: #fafafa;
+}
+
+.membership .option h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #444;
+}
+
+.membership .option p {
+  color: #666;
+  font-size: 16px;
+}
+.faq {
+  padding: 60px 20px;
+  background-color: #f5f5f5;
+  text-align: left;
+}
+
+.faq h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1e293b;
+}
+
+.faq .question {
+  margin-bottom: 25px;
+}
+
+.faq h3 {
+  font-size: 1.2rem;
+  color: #334155;
+}
+
+.faq p {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.6;
+}
+footer {
+  background-color: #000000; /* or the Figma footer color */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+footer img {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+footer .socials {
+  margin-bottom: 20px;
+}
+
+footer .socials a img {
+  width: 30px;
+  margin: 0 10px;
+  filter: brightness(0) invert(1); /* makes icons white */
+  transition: filter 0.3s;
+}
+
+footer .socials a:hover img {
+  filter: brightness(0) invert(0.6);
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
