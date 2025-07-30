@@ -1,111 +1,629 @@
-/* Basic page styles */
+/* Reset & Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif; /* simple font */
+  font-family: Arial, sans-serif;
+  color: #fff;
+  background-color: #fff;
 }
 
-/* Hero section styling */
-.hero-section {
-    position: relative; /* important for layering */
-    background: linear-gradient(to bottom, rgba(34,36,46,0.8), rgba(34,36,46,0.6)); /* dark gradient background */
-    color: white; /* white text */
-    padding: 100px 20px; /* top/bottom padding 100px, left/right 20px */
-    text-align: center; /* center the text */
+/* Header Section */
+header {
+  background: url('images/object.png') no-repeat center center/cover;
+  padding: 40px 20px;
+  text-align: center;
+  color: #fff;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+.hero-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.subhead {
+  font-size: 16px;
+  color: #ffffffb3;
+  margin-bottom: 30px;
+}
+.btn-primary {
+  background: #c271ff;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 14px;
+  display: inline-block;
+  margin: 20px 0;
+}
+.hero-text h2 {
+  font-size: 24px;
+  margin-top: 50px;
+}
+.hero-text h2 span {
+  color: #c271ff;
+  font-weight: bold;
+}
+.profiles {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.profile h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.profile p {
+  font-size: 14px;
+  color: #ffffffb3;
+  margin-top: 5px;
 }
 
-/* Styling the main hero heading */
-.hero-section h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+/* Quote Section */
+.quote {
+  background: #c271ff;
+  display: flex;
+  align-items: center;
+  padding: 60px 20px;
+  color: #fff;
+}
+.quote img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+.quote-text p {
+  font-style: italic;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.quote-text h3 {
+  font-weight: bold;
+  font-size: 16px;
+}
+.quote-text p:last-of-type {
+  font-size: 14px;
+  color: #ffffffcc;
 }
 
-/* Styling the paragraph under the heading */
-.hero-section p {
-    font-size: 20px;
-    max-width: 600px;
-    margin: 0 auto; /* center paragraph */
+/* Tutorials Section */
+.tutorials {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  color: #071629;
 }
-/* --- Testimonial Section --- */
-.testimonial-section {
-    background-color: #8e2de2;
-    padding: 80px 20px;
-    display: flex;
+.tutorials h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.tutorials h2 span {
+  color: #c271ff;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.card {
+  background: #f2f2f2;
+  padding: 15px;
+  width: 220px;
+  border-radius: 8px;
+  text-align: left;
+}
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.card h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+.card p {
+  font-size: 13px;
+  color: #666;
+}
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 8px;
+}
+.author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.author span {
+  font-size: 13px;
+  color: #c271ff;
+}
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.rating img {
+  width: 80px;
+}
+.rating span {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Membership Section */
+.membership {
+  background: #071629;
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+.membership h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.membership h2 span {
+  color: #c271ff;
+}
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.feature img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+.feature h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.feature p {
+  font-size: 13px;
+  color: #ffffffcc;
+}
+
+/* FAQ Section */
+.faq {
+  background: #fff;
+  color: #071629;
+  padding: 60px 20px;
+  text-align: center;
+}
+.faq h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+}
+.faq-item h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.faq-item p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Footer */
+footer {
+  background: #071629;
+  color: #fff;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-left .logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer-left p {
+  font-size: 13px;
+  color: #ffffffb3;
+  margin-top: 5px;
+}
+.footer-right a img {
+  width: 20px;
+  margin-left: 15px;
+}
+.video-thumbnails {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.thumb {
+  position: relative;
+  width: 255px; /* fixed size from Figma */
+  height: 150px; /* fixed height */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.thumb img.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.thumb img.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.video-thumbnails {
+  display: flex;
+  gap: 30px; /* Adjust spacing between thumbnails */
+  justify-content: center;
+  flex-wrap: wrap; /* Optional: allow wrapping on smaller screens */
+  margin-top: 30px;
+}
+
+.thumb {
+  position: relative;
+  width: 200px; /* Optional: set consistent size */
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.card {
+  background: #f2f2f2;
+  padding: 15px;
+  width: 220px;
+  border-radius: 8px;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .cards {
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    min-height: 250px;
+  }
+}
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 255px;
+  text-align: left;
+  flex-shrink: 0;
 }
 
-.testimonial-container {
-    max-width: 900px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    color: #ffffff;
-    padding: 0 20px;
+.thumb {
+  position: relative;
+  height: 154px;
+  overflow: hidden;
 }
 
-.testimonial-avatar img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #f0f0f0;
-    flex-shrink: 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+.thumb img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.testimonial-content {
-    flex-grow: 1;
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  transform: translate(-50%, -50%);
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 20px;
 }
 
-.testimonial-quote {
-    font-size: 20px;
-    line-height: 1.6;
-    font-style: italic;
-    margin-bottom: 15px;
-    position: relative;
-    padding-left: 40px;
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 255px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.testimonial-quote::before {
-    content: '“';
-    font-family: serif;
-    font-size: 80px;
-    color: rgba(255, 255, 255, 0.5);
-    position: absolute;
-    left: 0;
-    top: -10px;
-    line-height: 1;
+.thumb {
+  position: relative;
+  width: 100%;
+  height: 154px;
+  overflow: hidden;
 }
 
-.testimonial-author-name {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 5px;
+.thumb img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.testimonial-author-title {
-    font-size: 15px;
-    font-weight: 300;
-    opacity: 0.8;
-    font-style: italic;
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  transform: translate(-50%, -50%);
 }
 
-/* --- Responsive --- */
-@media (max-width: 768px) {
-    .testimonial-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
+.card h3 {
+  font-size: 16px;
+  margin: 10px 15px 5px;
+}
 
-    .testimonial-quote {
-        padding-left: 0;
-    }
+.card p {
+  font-size: 13px;
+  color: #666;
+  margin: 0 15px 10px;
+}
 
-    .testimonial-quote::before {
-        content: none;
-    }
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 15px;
+}
+
+.author img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.author span {
+  font-size: 13px;
+  color: #c271ff;
+}
+
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 15px 15px;
+}
+
+.rating img {
+  width: 70px;
+}
+
+.rating span {
+  font-size: 12px;
+  color: #999;
+}
+footer {
+  background: #071629;
+  color: #fff;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left .logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  font-size: 13px;
+  color: #ffffffb3;
+}
+
+.footer-right a img {
+  width: 20px;
+  margin-left: 15px;
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* Makes it pure white */
+  margin-left: 15px;
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1); /* Makes it pure white */
+  margin-left: 15px;
+}
+.footer-right img {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  filter: brightness(0) invert(1); /* Makes dark images white */
+}
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  width: 220px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.feature img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+.quote {
+  background-color: #c271ff;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.quote .quote-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quote img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.quote h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.quote p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.quote {
+  background-color: #c271ff;
+  color: white;
+  text-align: left;
+  padding: 60px 20px;
+}
+
+.quote-content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 60px; /* this pushes it to the right */
+}
+
+.quote img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.quote h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.quote p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.quote {
+  background-color: #c271ff;
+  color: white;
+  padding: 80px 0;
+}
+
+.quote .quote-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding-left: 60px;
+}
+
+.quote img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.quote-text h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.quote-text p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.quote {
+  background-color: #c271ff;
+  color: white;
+  padding: 80px 0;
+}
+
+.quote-wrapper {
+  width: 600px;         /* fixed width */
+  margin: 0 auto;
+  padding-right: 80px;   /* this gently shifts the whole section right */
+  text-align: right;
+}
+
+.quote-wrapper img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.quote-wrapper h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.quote-wrapper p {
+  font-size: 14px;
+  line-height: 1.6;
 }
