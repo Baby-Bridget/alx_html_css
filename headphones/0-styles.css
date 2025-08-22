@@ -1,0 +1,370 @@
+/* Header with logo and navigation */
+header {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background: url('images/headphones_hero_1.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+/* Logo at top-left */
+header .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 60px;
+}
+
+/* Navigation links at top-right */
+header nav {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #FF6565;
+}
+
+/* Hero text container */
+header .hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding-top: 20vh; /* push text down from top */
+}
+
+/* Main heading */
+header .hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Subheading below main heading */
+header .hero-text h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+    color: #f0f0f0;
+}
+
+/* Call to Action button */
+header .cta-btn {
+    padding: 15px 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #FF6565;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    margin-bottom: 30px;
+}
+
+header .cta-btn:hover {
+    opacity: 0.9;
+}
+
+/* Additional paragraph under button */
+header .hero-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ddd;
+    max-width: 600px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    header .hero-text h1 {
+        font-size: 2rem;
+    }
+    header .hero-text h2 {
+        font-size: 1.2rem;
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* Logo size */
+.logo {
+    width: 100px;  /* reduced from original size */
+    height: 80px;  
+    margin-bottom: 10px;
+}
+.logo {
+    width: 150px;
+    height: 80px; /* exact height */
+}
+.logo {
+    width: 150px;
+    height: 20px;
+    margin-top: 20px;   /* space from top */
+    margin-left: 50px;  /* space from left */
+}
+.logo {
+    width: auto;       /* keeps horizontal proportion flexible */
+    height: 60px;      /* sets vertical size */
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.logo {
+    width: 200px;   /* set desired width */
+    height: 30px;   /* set desired height */
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.logo {
+    width: 300;   /* set desired width */
+    height: 00px;   /* set desired height */
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.hero-text {
+    position: relative; /* ensures positioning works */
+    top: 150px; /* adjust this value to move text down */
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+}
+header {
+    background: url('images/headphones_hero_1.jpg') no-repeat center center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh; /* ensure it grows if content is taller */
+    color: white;
+    padding-bottom: 50px; /* space for the last paragraph */
+}
+
+.hero-text {
+    position: relative;
+    top: 40%;
+    transform: translateY(-40%);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Optional: style the footer paragraph */
+.hero-text p {
+    margin-top: 30px; /* add space from CTA button */
+    line-height: 1.6;
+}
+.hero-text {
+    position: relative; /* ensures positioning works */
+    top: 150px; /* adjust this value to move text down */
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.hero-text {
+    position: relative; /* ensures positioning works */
+    top: 150px; /* adjust this value to move text down */
+    text-align: center;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto;
+}
+header {
+    background: url('images/headphones_hero_1.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 200px; /* adjusts vertical starting point of text */
+    box-sizing: border-box;
+    color: white;
+}
+
+.hero-text {
+    text-align: center;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 2rem; /* main heading smaller */
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 1.2rem; /* subheading smaller */
+    margin-bottom: 20px;
+}
+
+.hero-text button.cta-btn {
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+header {
+    background: url('images/headphones_hero_1.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 250px; /* bring all text a little lower */
+    box-sizing: border-box;
+    color: white;
+}
+
+.hero-text {
+    text-align: center;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 5px; /* reduce space between h1 and h2 */
+}
+
+.hero-text h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px; /* space before button */
+}
+
+.hero-text button.cta-btn {
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+header {
+    background: url('images/headphones_hero_1.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 300px; /* moves the whole text block lower */
+    box-sizing: border-box;
+    color: white;
+}
+
+.hero-text {
+    text-align: center;
+    max-width: 600px;
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+    margin-bottom: 8px; /* smaller space between h1 and h2 */
+}
+
+.hero-text h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px; /* space before button */
+}
+
+.hero-text button.cta-btn {
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.hero-text {
+    margin-top: 2in; /* pushes the entire text block down by 2 inches */
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none; /* hide menu links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* below header */
+        left: 0;
+        width: 100%;
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .logo-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Adjust hero text for mobile */
+    .hero-text {
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+/* Desktop keeps original nav visible */
+@media screen and (min-width: 769px) {
+    .hamburger {
+        display: none;
+    }
+}
+/* Hamburger icon hidden on desktop */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Mobile view settings */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* Hide normal menu by default */
+    flex-direction: column;
+    background: white; /* Or match your design */
+    position: absolute;
+    top: 60px; /* Below header */
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  nav ul.show {
+    display: flex; /* Show when toggled */
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger on mobile */
+  }
+}
